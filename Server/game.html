@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="no-focus-outline">
+<head>
+    <meta charset="UTF-8">
+    <title>bee.io</title>
+    <link rel="stylesheet" type="text/css" href="Static/mystyles.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+</head>
+<body ondragstart="return false">
+    <div id="overlay"></div>
+
+
+    <div id="myForm">
+            <label>bee.io</label>
+            <img src="Static/BeePictures/beeyellowp.png" alt="mySkin" height="70" width="100" id="mySkin">
+            <input type="text" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
+            <button onclick="openSkins()">Skins</button>
+            <p>Move your mouse to control the bee</p>
+            <p>Press <b>Space</b> to dash</p>
+    </div>
+
+
+    <div class="webgl-content" id="game">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Bee.io</div>
+      </div>
+    </div>
+ 
+
+    <div id="connectButton">
+        <button onclick="changeScene()">Connect</button>
+    </div>
+     <div id="pop-up-skin-form">
+             <span class="skin" onclick="pickSkin(0)">
+                 <img src="Static/BeePictures/beeyellowp.png" alt="yellow" height="90" width="130">
+             </span>
+             <span class="skin" onclick="pickSkin(1)">
+                 <img src="Static/BeePictures/beebluep.png" alt="blue" height="90" width="130">
+             </span>
+             <span class="skin" onclick="pickSkin(2)">
+                 <img src="Static/BeePictures/beeredp.png" alt="red" height="90" width="130">
+             </span>
+             <span class="skin" onclick="pickSkin(3)">
+                 <img src="Static/BeePictures/beegreenp.png" alt="green" height="90" width="130">
+             </span>
+        <button onclick="goBack()">Select</button>
+    </div>
+    <script src="Static/script.js"></script>
+</body>
+</html>
