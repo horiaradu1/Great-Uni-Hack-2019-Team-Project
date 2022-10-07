@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="no-focus-outline">
+<head>
+    <meta charset="UTF-8">
+    <title>bee.io</title>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="myForm">
+            <label>bee.io</label>
+            <img src="BeePictures/beeyellow.png" alt="mySkin" height="150" width="300" id="mySkin">
+            <input type="text" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
+            <button onclick="openSkins()">Skins</button>
+    </div>
+    <div id="connectButton">
+        <button>Connect</button>
+    </div>
+     <div id="pop-up-skin-form">
+             <span class="skin" onclick="pickSkin(0)">
+                 <img src="BeePictures/beeyellow.png" alt="yellow" height="300" width="500">
+             </span>
+             <span class="skin" onclick="pickSkin(1)">
+                 <img src="BeePictures/beeblue.png" alt="blue" height="300" width="500">
+             </span>
+             <span class="skin" onclick="pickSkin(2)">
+                 <img src="BeePictures/beered.png" alt="red" height="300" width="500">
+             </span>
+             <span class="skin" onclick="pickSkin(3)">
+                 <img src="BeePictures/beegreen.png" alt="green" height="300" width="500">
+             </span>
+        <button onclick="goBack()">Select</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

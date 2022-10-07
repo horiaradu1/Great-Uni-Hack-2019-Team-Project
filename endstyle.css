@@ -1,0 +1,93 @@
+html {
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	height:100%;
+}
+body {
+	margin:0;
+	padding:0;
+	font-family: Verdana;
+}
+#myForm
+			{
+				margin: auto;
+				padding: 20px 40px;
+				width: 500px;
+				height: 300px;	
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+				margin-top: 100px;
+				background:linear-gradient(top, #3c3c3c 0%, #222222 100%);
+				background:-webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+				float:top;
+			}
+#myForm label {
+				display:block;
+				text-align: center;
+				width: 100%;
+				height:90px;
+				font-size:50px;
+				color:white;
+				font-weight: bold;
+}
+#myForm header {
+				display:block;
+				text-align: center;
+				width: 100%;
+				height:60px;
+				font-size:30px;
+				color:white;
+}
+#myForm input {
+				font-family:Verdana;
+				display:block;
+				text-align:center;
+				margin-left: 110px;
+				height:30px;
+				font-size: 13pt;
+				opacity:0.7;
+				transition-duration:0.2s;
+				letter-spacing: 1px;
+}
+#myForm input:focus{
+opacity:1.0;
+}
+#myForm input:hover{
+opacity:1.0;
+}
+#myForm button {
+	display:block;
+	float:bottom;
+	margin-left:150px;
+	text-align:center;
+	border-radius: 5px;
+    width: 200px;
+    height: 55px;
+    font-family:Verdana;
+    font-size:15pt;
+	margin-top:30px;
+	background-color:yellow;
+	color:gray;
+	font-weight:bold;
+	border:none;
+}
+#connectButton {
+margin-top:40px;
+}
+#connectButton button{
+	display:block;
+	width: 350px;
+    height: 55px;
+    background-color:yellow;
+    color:gray;
+    font-weight:bold;
+    margin: auto;
+    border:none;
+    font-size:18pt;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
